@@ -10,9 +10,8 @@ function App() {
 
   const [phraseRandom, setPhraseRandom] = useState(getRandomFromArr(phrases));
   const [bgImageRandom, setBgImageRandom] = useState(getRandomFromArr(bgImages));
-  // console.log(bgImageRandom);
   const styleBackground = {
-    backgroundImage: `url(../src/img/fondo${bgImageRandom}.png)`,
+    backgroundImage: `url(./assets/fondo${bgImageRandom}.png)`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   }
